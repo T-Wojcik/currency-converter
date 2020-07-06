@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script defer src="js/script.js"></script>
+    <title>Przelicznik Walut | Wirtualny Kantor</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="container__header">Najkorzystniejszy wirtualny kantor <q
+                class="container__header--colourised">Centuś</q> 😎</h1>
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wymiana</legend>
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Wybierz walutę: </span>
+                        <select class="form__field  js-currency-1" name="currency">
+                            <option value="Euro">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="PLN" selected>PLN</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText ">Wpisz kwotę: </span>
+                        <input min="1" class="form__field js-amount" type="number" step="any" required>
+                    </label>
+                </p>
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Wymień na: </span>
+                        <select class="form__field js-currency-2" name="currency">
+                            <option value="Euro">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="PLN">PLN</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="form__paragraph">
+                    <span class="form__labelText form__labelText--smaller">Wynik:</span>
+                    <input min="1" class="form__field form__field--bigger js-result" type="number" readonly>
+                </p>
+                <p class="form__paragraph">
+                    <button class="form__button js-submit">Przelicz</button>
+                </p>
+            </fieldset>
+        </form>
+        <table class="table">
+            <caption class="table__caption">*Kurs walut według NBP na dzień 15.06.2020 godz.17:30</caption>
+            <tr class="table__row">
+                <th class="table__cell table__cell--header">Lp.</th>
+                <th class="table__cell table__cell--header">Nazwa waluty</th>
+                <th class="table__cell table__cell--header">Kupno</th>
+                <th class="table__cell table__cell--header">Sprzedaż</th>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell table__cell--header">Lp. 1</th>
+                <td class="table__cell">Euro</td>
+                <td class="table__cell">4,3990</td>
+                <td class="table__cell">4,4878</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell table__cell--header">Lp. 1</th>
+                <td class="table__cell">Dolar</td>
+                <td class="table__cell">3,8922</td>
+                <td class="table__cell">3,9708</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell table__cell--header">Lp. 1</th>
+                <td class="table__cell">Funt szterling</td>
+                <td class="table__cell">4,8997</td>
+                <td class="table__cell">4,9987</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

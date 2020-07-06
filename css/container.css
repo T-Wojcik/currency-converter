@@ -1,0 +1,16 @@
+.container{
+    max-width:1000px;
+    width:100%;
+    margin:50px auto 0 auto;
+}
+
+.container__header{
+    color:#333;
+    text-align:center;
+    letter-spacing: 1px;
+    margin-bottom:50px;
+}
+
+.container__header--colourised{
+    color:teal;
+}
